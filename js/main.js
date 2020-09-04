@@ -50,7 +50,7 @@ $(document).ready(() => {
         <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="thumbnail">
       </div>
       <div class="col-md-8">
-        <h2>${movie.title}</h2>
+        <h2 class="text-center" style="color: white;">${movie.title}</h2>
         <ul class="list-group">
           <li class="list-group-item"><strong>Genre:</strong> ${movie.genres[0].name}, ${movie.genres[1].name}</li>
           <li class="list-group-item"><strong>Released:</strong> ${movie.release_date}</li>
@@ -61,8 +61,8 @@ $(document).ready(() => {
       </div>
     </div>
     <div class="row">
-      <div class="well">
-        <h3>Plot</h3>
+      <div class="well" style="background-color: lightgray;">
+        <h3 class="text-center">Plot</h3>
         ${movie.overview}
         <hr>
         <a href="http://imdb.com/title/${movie.imdb_id}" target="_blank" class="btn btn-primary">View IMDB</a>
